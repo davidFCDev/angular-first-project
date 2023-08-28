@@ -18,8 +18,8 @@ export class AppComponent {
 
   ngOnInit() {
     this.http
-      .get<Product[]>('https://api.escuelajs.co/api/v1/products')
-      .subscribe((data: Product[]) => {
+      .get<Product[]>('https://fakestoreapi.com/products')
+      .subscribe((data) => {
         this.products = data;
       });
   }

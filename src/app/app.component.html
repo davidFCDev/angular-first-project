@@ -1,5 +1,4 @@
 <h1>Hola {{ title }}</h1>
 <button (click)="changeTitle()">Change</button>
 
-
-<app-product [product]="{{ }}"></app-product>
+<app-product class="list-products" [product]="product" *ngFor="let product of products"></app-product>
